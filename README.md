@@ -8,7 +8,7 @@ To install a particular version of ArmNN we have to combine three kinds of tags:
 
 - Backend-related tags (based on a specific build of ArmCL): `neon`, `opencl`. These can be combined or both missing (reference).
 
-- Version/Release-related tags: `rel.19.02` (a particular frozen release), `release` (the latest stable release), `dev` (the live development branch). These are mutually exclusive. Exactly one Version/Release tag must be present.
+- Version/Release-related tags: `rel.20.08` (a particular frozen release), `release` (the latest stable release), `dev` (the live development branch). These are mutually exclusive. Exactly one Version/Release tag must be present.
 
 ## Examples
 
@@ -22,8 +22,7 @@ The latest stable release supporting the TensorFlow frontend and OpenCL backend:
 $ ck install package --tags=lib,armnn,tf,opencl,release
 ```
 
-The 19.02 release supporting the TFLite and ONNX frontends and no optimized backends (i.e. reference):
+The 20.08 release supporting the TFLite and ONNX frontends and no optimized backends (i.e. reference):
 ```
-$ ck install package --tags=lib,armnn,tflite,onnx,rel.19.02
+$ ck install package --tags=lib,armnn,tflite,onnx,rel.20.08
 ```
-
