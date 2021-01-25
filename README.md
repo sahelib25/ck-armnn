@@ -1,6 +1,6 @@
 [![Travis Build Status](https://travis-ci.org/ctuning/ck-armnn.svg?branch=master)](https://travis-ci.org/ctuning/ck-armnn)
 
-*This fork is maintained by [dividiti Limited](https://dividiti.com).*
+*This fork is maintained by [Krai Ltd](https://krai.ai).*
 
 # ArmNN installation
 
