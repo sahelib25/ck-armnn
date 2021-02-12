@@ -11,6 +11,7 @@
       "PACKAGE_SUB_DIR": "src", 
       "PACKAGE_URL": "https://github.com/ARM-software/ComputeLibrary",
       "PACKAGE_VERSION": "release",
+      "WERROR": "YES",
       "USE_NEON": "NO",
       "USE_OPENCL": "NO"
     }

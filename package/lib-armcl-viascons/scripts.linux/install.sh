@@ -32,6 +32,13 @@ echo "Backends: USE_NEON='${USE_NEON}'; USE_OPENCL='${USE_OPENCL}'."
 echo "Target: arch=${ARCH}."
 echo ""
 
+if [ "$WERROR" == "ON" ] || [ "$WERROR" == "on" ] || [ "$WERROR" == "YES" ] || [ "$WERROR" == "yes" ] || [ "$WERROR" == "1" ]
+then
+    ARMCL_SCONS_INTERNAL_WERROR="Werror=True"
+else
+    ARMCL_SCONS_INTERNAL_WERROR="Werror=False"
+fi
+
 if [ "$USE_NEON" == "ON" ] || [ "$USE_NEON" == "on" ] || [ "$USE_NEON" == "YES" ] || [ "$USE_NEON" == "yes" ] || [ "$USE_NEON" == "1" ]
 then
     ARMCL_SCONS_INTERNAL_NEON="neon=1"
@@ -46,7 +53,6 @@ else
     ARMCL_SCONS_INTERNAL_OPENCL=""
 fi
 
-
 cd ${ARMCL_SOURCE_DIR}
 CC=${CK_CC} CXX=${CK_CXX} scons -j ${CK_HOST_CPU_NUMBER_OF_PROCESSORS:-1} \
     arch=${ARCH} toolchain_prefix=" " \
@@ -54,5 +60,6 @@ CC=${CK_CC} CXX=${CK_CXX} scons -j ${CK_HOST_CPU_NUMBER_OF_PROCESSORS:-1} \
     debug=0 asserts=0 \
     benchmark_tests=0 \
     validation_tests=0 \
+    ${ARMCL_SCONS_INTERNAL_WERROR} \
     ${ARMCL_SCONS_INTERNAL_NEON} ${ARMCL_SCONS_INTERNAL_OPENCL} \
     install_dir=${INSTALL_DIR}/install
