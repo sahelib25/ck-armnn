@@ -14,7 +14,8 @@
       "WERROR": "YES",
       "USE_NEON": "NO",
       "USE_OPENCL": "NO"
-    }
+    },
+    "no_ver_in_suggested_path": "yes"
   }, 
   "deps": {
     "compiler": {
@@ -109,6 +110,12 @@
         "extra_env": {
             "PACKAGE_GIT_CHECKOUT": "v20.11",
             "PACKAGE_VERSION": "20.11"
+        }
+    },
+    "rel.21.02": {
+        "extra_env": {
+            "PACKAGE_GIT_CHECKOUT": "v21.02",
+            "PACKAGE_VERSION": "21.02"
         }
     },
     "dev": {
