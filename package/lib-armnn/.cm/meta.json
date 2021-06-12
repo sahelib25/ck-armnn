@@ -91,7 +91,8 @@
         "v3.5.1":       [ { "PACKAGE_VERSION": "20.08" } ],
         "v3.12.4":      [ { "PACKAGE_VERSION": "20.11" } ],
         "v3.12.4":      [ { "PACKAGE_VERSION": "21.02" } ],
-        "v3.12.4":      [ { "PACKAGE_VERSION": "21.05" } ]
+        "v3.12.4":      [ { "PACKAGE_VERSION": "21.05" } ],
+        "v3.12.4":      [ { "PACKAGE_VERSION": "dev"   } ]
       }
     },
     "tensorflow-source": {
@@ -114,7 +115,8 @@
         "rel.1.15":     [ { "PACKAGE_VERSION": "20.08" } ],
         "rel.2.3":      [ { "PACKAGE_VERSION": "20.11" } ],
         "rel.2.3":      [ { "PACKAGE_VERSION": "21.02" } ],
-        "rel.2.3":      [ { "PACKAGE_VERSION": "21.05" } ]
+        "rel.2.3":      [ { "PACKAGE_VERSION": "21.05" } ],
+        "rel.2.3":      [ { "PACKAGE_VERSION": "dev"   } ]
       }
     },
     "lib-armcl-variation": {
@@ -271,10 +273,8 @@
     "dev": {
       "extra_env": {
         "PACKAGE_URL": "https://review.mlplatform.org/ml/armnn",
-        "PACKAGE_PATCH__REL_20_05__NO_WERROR": "rel.20.05_no-werror.patch",
         "PACKAGE_VERSION": "dev",
-        "ONNX_BRANCH": "--branch rel-1.7.0",
-        "ONNX_BRANCH_comment": "Deliberately setting a different ONNX branch from rel.20.05 as it seems to fail"
+        "ONNX_BRANCH": "--branch rel-1.6.0"
       }
     },
     "neon": {
