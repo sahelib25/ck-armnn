@@ -70,7 +70,8 @@
         "v3.5.1":       [ { "PACKAGE_VERSION": "20.05" } ],
         "v3.5.1":       [ { "PACKAGE_VERSION": "20.08" } ],
         "v3.12.4":      [ { "PACKAGE_VERSION": "20.11" } ],
-        "v3.12.4":      [ { "PACKAGE_VERSION": "21.02" } ]
+        "v3.12.4":      [ { "PACKAGE_VERSION": "21.02" } ],
+        "v3.12.4":      [ { "PACKAGE_VERSION": "21.05" } ]
       }
     },
     "lib-protobuf-host": {
@@ -89,7 +90,8 @@
         "v3.5.1":       [ { "PACKAGE_VERSION": "20.05" } ],
         "v3.5.1":       [ { "PACKAGE_VERSION": "20.08" } ],
         "v3.12.4":      [ { "PACKAGE_VERSION": "20.11" } ],
-        "v3.12.4":      [ { "PACKAGE_VERSION": "21.02" } ]
+        "v3.12.4":      [ { "PACKAGE_VERSION": "21.02" } ],
+        "v3.12.4":      [ { "PACKAGE_VERSION": "21.05" } ]
       }
     },
     "tensorflow-source": {
@@ -111,7 +113,8 @@
         "rel.1.15":     [ { "PACKAGE_VERSION": "20.05" } ],
         "rel.1.15":     [ { "PACKAGE_VERSION": "20.08" } ],
         "rel.2.3":      [ { "PACKAGE_VERSION": "20.11" } ],
-        "rel.2.3":      [ { "PACKAGE_VERSION": "21.02" } ]
+        "rel.2.3":      [ { "PACKAGE_VERSION": "21.02" } ],
+        "rel.2.3":      [ { "PACKAGE_VERSION": "21.05" } ]
       }
     },
     "lib-armcl-variation": {
@@ -133,6 +136,7 @@
         "rel.20.08":    [ { "PACKAGE_VERSION": "20.08" } ],
         "rel.20.11":    [ { "PACKAGE_VERSION": "20.11" } ],
         "rel.21.02":    [ { "PACKAGE_VERSION": "21.02" } ],
+        "rel.21.05":    [ { "PACKAGE_VERSION": "21.05" } ],
         "release":      [ { "PACKAGE_VERSION": "release" } ],
         "dev":          [ { "PACKAGE_VERSION": "dev" } ],
         "neon":         [ { "USE_NEON":   ["on", "ON", "yes", "YES", "true", "TRUE", "1"] } ],
@@ -254,6 +258,13 @@
         "extra_env": {
             "PACKAGE_GIT_CHECKOUT": "v21.02",
             "PACKAGE_VERSION": "21.02",
+            "ONNX_BRANCH": "--branch rel-1.6.0"
+        }
+    },
+     "rel.21.05": {
+        "extra_env": {
+            "PACKAGE_GIT_CHECKOUT": "v21.05",
+            "PACKAGE_VERSION": "21.05",
             "ONNX_BRANCH": "--branch rel-1.6.0"
         }
     },

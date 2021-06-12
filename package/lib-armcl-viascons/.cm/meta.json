@@ -118,6 +118,13 @@
             "PACKAGE_VERSION": "21.02"
         }
     },
+    "rel.21.05": {
+        "extra_env": {
+            "PACKAGE_GIT_CHECKOUT": "v21.05",
+            "PACKAGE_VERSION": "21.05"
+        }
+    },
+
     "dev": {
         "extra_env": {
             "PACKAGE_URL": "https://review.mlplatform.org/ml/ComputeLibrary",
