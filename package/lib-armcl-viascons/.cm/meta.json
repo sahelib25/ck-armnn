@@ -15,6 +15,7 @@
       "USE_NEON": "NO",
       "USE_OPENCL": "NO"
     },
+    "use_git_revision": "yes",
     "no_ver_in_suggested_path": "yes"
   }, 
   "deps": {
@@ -65,81 +66,80 @@
     "release": {
     },
     "rel.18.08": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v18.08",
-            "PACKAGE_VERSION": "18.08"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v18.08",
+        "PACKAGE_VERSION": "18.08"
+      }
     },
     "rel.18.11": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v18.11",
-            "PACKAGE_VERSION": "18.11"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v18.11",
+        "PACKAGE_VERSION": "18.11"
+      }
     },
     "rel.19.02": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v19.02",
-            "PACKAGE_VERSION": "19.02"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v19.02",
+        "PACKAGE_VERSION": "19.02"
+      }
     },
     "rel.19.05": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v19.05",
-            "PACKAGE_VERSION": "19.05"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v19.05",
+        "PACKAGE_VERSION": "19.05"
+      }
     },
     "rel.19.08": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v19.08",
-            "PACKAGE_VERSION": "19.08"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v19.08",
+        "PACKAGE_VERSION": "19.08"
+      }
     },
     "rel.20.05": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v20.05",
-            "PACKAGE_VERSION": "20.05"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v20.05",
+        "PACKAGE_VERSION": "20.05"
+      }
     },
     "rel.20.08": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v20.08",
-            "PACKAGE_VERSION": "20.08"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v20.08",
+        "PACKAGE_VERSION": "20.08"
+      }
     },
     "rel.20.11": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v20.11",
-            "PACKAGE_VERSION": "20.11"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v20.11",
+        "PACKAGE_VERSION": "20.11"
+      }
     },
     "rel.21.02": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v21.02",
-            "PACKAGE_VERSION": "21.02"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v21.02",
+        "PACKAGE_VERSION": "21.02"
+      }
     },
     "rel.21.05": {
-        "extra_env": {
-            "PACKAGE_GIT_CHECKOUT": "v21.05",
-            "PACKAGE_VERSION": "21.05"
-        }
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v21.05",
+        "PACKAGE_VERSION": "21.05"
+      }
     },
-
     "dev": {
-        "extra_env": {
-            "PACKAGE_URL": "https://review.mlplatform.org/ml/ComputeLibrary",
-            "PACKAGE_VERSION": "dev"
-        }
+      "extra_env": {
+        "PACKAGE_URL": "https://review.mlplatform.org/ml/ComputeLibrary",
+        "PACKAGE_VERSION": "dev"
+      }
     },
     "neon": {
-        "extra_env": {
-            "USE_NEON": "YES"
-        }
+      "extra_env": {
+        "USE_NEON": "YES"
+      }
     },
     "opencl": {
-        "extra_env": {
-            "USE_OPENCL": "YES"
-        }
+      "extra_env": {
+        "USE_OPENCL": "YES"
+      }
     }
   },
   "use_scripts_from_another_entry": {
