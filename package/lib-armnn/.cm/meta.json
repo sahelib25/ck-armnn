@@ -25,7 +25,7 @@
       "USE_ONNX": "NO",
       "EXTRA_FLAGS": "-Werror",
       "CK_ARMNN_CMAKE_VERBOSE": "OFF",
-      "CK_ARMNN_BUILD_TESTS": ""
+      "CK_ARMNN_BUILD_TESTS": "NO"
     }, 
     "no_ver_in_suggested_path": "yes",
     "use_git_revision": "yes"
