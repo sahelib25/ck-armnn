@@ -71,7 +71,8 @@
         "v3.5.1":       [ { "PACKAGE_VERSION": "20.08" } ],
         "v3.12.4":      [ { "PACKAGE_VERSION": "20.11" } ],
         "v3.12.4":      [ { "PACKAGE_VERSION": "21.02" } ],
-        "v3.12.4":      [ { "PACKAGE_VERSION": "21.05" } ]
+        "v3.12.4":      [ { "PACKAGE_VERSION": "21.05" } ],
+        "v3.12.4":      [ { "PACKAGE_VERSION": "21.08" } ]
       }
     },
     "lib-protobuf-host": {
@@ -92,7 +93,7 @@
         "v3.12.4":      [ { "PACKAGE_VERSION": "20.11" } ],
         "v3.12.4":      [ { "PACKAGE_VERSION": "21.02" } ],
         "v3.12.4":      [ { "PACKAGE_VERSION": "21.05" } ],
-	"v3.12.4":      [ { "PACKAGE_VERSION": "21.08" } ],
+        "v3.12.4":      [ { "PACKAGE_VERSION": "21.08" } ],
         "v3.12.4":      [ { "PACKAGE_VERSION": "dev"   } ]
       }
     },
@@ -117,7 +118,7 @@
         "rel.2.3":      [ { "PACKAGE_VERSION": "20.11" } ],
         "rel.2.3":      [ { "PACKAGE_VERSION": "21.02" } ],
         "rel.2.3":      [ { "PACKAGE_VERSION": "21.05" } ],
-	"rel.2.3":      [ { "PACKAGE_VERSION": "21.08" } ],
+        "rel.2.3":      [ { "PACKAGE_VERSION": "21.08" } ],
         "rel.2.3":      [ { "PACKAGE_VERSION": "dev"   } ]
       }
     },
@@ -141,7 +142,7 @@
         "rel.20.11":    [ { "PACKAGE_VERSION": "20.11" } ],
         "rel.21.02":    [ { "PACKAGE_VERSION": "21.02" } ],
         "rel.21.05":    [ { "PACKAGE_VERSION": "21.05" } ],
-	"rel.21.08":    [ { "PACKAGE_VERSION": "21.08" } ],
+        "rel.21.08":    [ { "PACKAGE_VERSION": "21.08" } ],
         "release":      [ { "PACKAGE_VERSION": "release" } ],
         "dev":          [ { "PACKAGE_VERSION": "dev" } ],
         "neon":         [ { "USE_NEON":   ["on", "ON", "yes", "YES", "true", "TRUE", "1"] } ],
@@ -274,11 +275,11 @@
       }
     },
     "rel.21.08": {
-	"extra_env": {
-	  "PACKAGE_GIT_CHECKOUT": "v21.08",
-	  "PACKAGE_VERSION": "21.08",
-	  "ONNX_BRANCH": "--branch rel-1.6.0"
-	}
+       "extra_env": {
+          "PACKAGE_GIT_CHECKOUT": "v21.08",
+          "PACKAGE_VERSION": "21.08",
+          "ONNX_BRANCH": "--branch rel-1.6.0"
+      }
     },
     "dev": {
       "extra_env": {
