@@ -33,7 +33,7 @@ echo ""
 
 if [ "$USE_TFLITE" == "YES" ] || [ "$USE_TFLITE" == "yes" ] || [ "$USE_TFLITE" == "ON" ] || [ "$USE_TFLITE" == "on" ] || [ "$USE_TFLITE" == "1" ]
 then
-    CMAKE_FOR_TFLITE=" -DBUILD_TF_LITE_PARSER=1 -DTF_LITE_GENERATED_PATH=${CK_ENV_LIB_TF_SRC_SRC}/tensorflow/lite/schema -DFLATBUFFERS_ROOT=${CK_ENV_LIB_FLATBUFFERS} -DFLATBUFFERS_LIBRARY=${CK_ENV_LIB_FLATBUFFERS_LIB}/libflatbuffers.a "
+    CMAKE_FOR_TFLITE=" -DBUILD_TF_LITE_PARSER=1 -DTF_LITE_GENERATED_PATH=${CK_ENV_LIB_TF_SRC_SRC}/tensorflow/lite/schema -DTfLite_Schema_INCLUDE_PATH=${CK_ENV_LIB_TF_SRC_SRC}/tensorflow/lite/schema -DTfLite_INCLUDE_DIR=${CK_ENV_LIB_TF_SRC_SRC} -DFLATBUFFERS_ROOT=${CK_ENV_LIB_FLATBUFFERS} -DFLATBUFFERS_LIBRARY=${CK_ENV_LIB_FLATBUFFERS_LIB}/libflatbuffers.a -DFLATC_DIR=${CK_ENV_LIB_FLATBUFFERS_BIN} "
 else
     CMAKE_FOR_TFLITE=""
 fi
@@ -41,7 +41,7 @@ fi
 if [ -n "$CMAKE_FOR_TFLITE" ] || [ "$USE_TF" == "YES" ] || [ "$USE_TF" == "yes" ] || [ "$USE_TF" == "ON" ] || [ "$USE_TF" == "on" ] || [ "$USE_TF" == "1" ]
 then
     echo ""
-    echo "Generating Protobuf files from Tensorflow ..."
+    echo "Generating Protobuf files from TensorFlow ..."
     echo ""
 
     rm -rf "${TF_PB_DIR}"

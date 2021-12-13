@@ -40,7 +40,7 @@ fi
 if [ -n "$CMAKE_FOR_TFLITE" ] || [ "$USE_TF" == "YES" ] || [ "$USE_TF" == "yes" ] || [ "$USE_TF" == "ON" ] || [ "$USE_TF" == "on" ] || [ "$USE_TF" == "1" ]
 then
     echo ""
-    echo "Generating Protobuf files from Tensorflow ..."
+    echo "Generating Protobuf files from TensorFlow ..."
     echo ""
 
     rm -rf "${TF_PB_DIR}"
