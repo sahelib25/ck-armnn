@@ -36,4 +36,7 @@ The 21.08 release supporting the TFLite and ONNX frontends and no optimized back
 ```
 $ ck install package --tags=lib,armnn,tflite,onnx,rel.21.08
 ```
-
+The 21.11 release supporting the TFLite and ONNX frontends and no optimized backends (i.e. reference):
+```
+$ ck install package --tags=lib,armnn,tflite,onnx,rel.21.11
+```
