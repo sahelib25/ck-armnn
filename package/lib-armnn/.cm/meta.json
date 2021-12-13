@@ -106,7 +106,7 @@
         { "USE_TFLITE": ["on", "ON", "yes", "YES", "true", "TRUE", "1"] }
       ],
       "local": "yes", 
-      "name": "Tensorflow source", 
+      "name": "TensorFlow source",
       "sort": 30, 
       "tags": "tensorflow,source",
       "update_tags_if_env" : {
@@ -121,8 +121,8 @@
         "rel.2.3":      [ { "PACKAGE_VERSION": "21.02" } ],
         "rel.2.3":      [ { "PACKAGE_VERSION": "21.05" } ],
         "rel.2.3":      [ { "PACKAGE_VERSION": "21.08" } ],
-        "rel.2.3":      [ { "PACKAGE_VERSION": "21.11" } ],
-        "rel.2.3":      [ { "PACKAGE_VERSION": "dev"   } ]
+        "rel.2.5":      [ { "PACKAGE_VERSION": "21.11" } ],
+        "rel.2.5":      [ { "PACKAGE_VERSION": "dev"   } ]
       }
     },
     "lib-armcl-variation": {
@@ -160,7 +160,7 @@
       "local": "yes",
       "name": "Google FlatBuffers library",
       "sort": 50,
-      "tags": "lib,flatbuffers"
+      "tags": "lib,flatbuffers,v1.12"
     },
     "compiler": {
       "local": "yes",
