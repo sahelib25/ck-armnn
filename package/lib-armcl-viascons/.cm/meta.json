@@ -132,6 +132,7 @@
       }
     },
     "rel.21.11": {
+      "on_by_default": "yes",
       "extra_env": {
         "PACKAGE_GIT_CHECKOUT": "v21.11",
         "PACKAGE_VERSION": "21.11"
