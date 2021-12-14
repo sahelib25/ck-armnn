@@ -38,7 +38,7 @@ else
     CMAKE_FOR_TFLITE=""
 fi
 
-if [ -n "$CMAKE_FOR_TFLITE" ] || [ "$USE_TF" == "YES" ] || [ "$USE_TF" == "yes" ] || [ "$USE_TF" == "ON" ] || [ "$USE_TF" == "on" ] || [ "$USE_TF" == "1" ]
+if [ -z "$CMAKE_FOR_TFLITE" ] || [ "$USE_TF" == "YES" ] || [ "$USE_TF" == "yes" ] || [ "$USE_TF" == "ON" ] || [ "$USE_TF" == "on" ] || [ "$USE_TF" == "1" ]
 then
     echo ""
     echo "Generating Protobuf files from TensorFlow ..."

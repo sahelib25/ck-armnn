@@ -32,6 +32,22 @@
   }, 
   "deps": {
     "lib-boost": {
+      "enable_if_env": [
+        { 
+	  "PACKAGE_VERSION": [
+            "18.08",
+            "18.11",
+            "19.02",
+            "19.05",
+            "19.08",
+            "20.05",
+            "20.08",
+            "20.11",
+            "21.02",
+            "21.05"
+          ]
+	}
+      ],
       "local": "yes", 
       "name": "Boost library", 
       "skip_default": "yes", 
@@ -53,6 +69,9 @@
       ]
     }, 
     "lib-protobuf": {
+      "enable_if_env": [
+        { "USE_ONNX": ["on", "ON", "yes", "YES", "true", "TRUE", "1"] }
+      ],
       "local": "yes",
       "name": "ProtoBuf library",
       "only_for_target_os_tags": [
@@ -77,6 +96,9 @@
       }
     },
     "lib-protobuf-host": {
+      "enable_if_env": [
+        { "USE_ONNX": ["on", "ON", "yes", "YES", "true", "TRUE", "1"] }
+      ],
       "force_target_as_host": "yes",
       "local": "yes",
       "name": "ProtoBuf host compiler",
@@ -176,6 +198,7 @@
         "v1.12":    [ { "PACKAGE_VERSION": "21.11" } ],
         "v1.12":    [ { "PACKAGE_VERSION": "dev" } ],
         "v1.12":    [ { "PACKAGE_VERSION": "release" } ]
+      }
     },
     "compiler": {
       "local": "yes",
