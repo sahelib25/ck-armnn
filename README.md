@@ -40,3 +40,15 @@ The 21.11 release supporting the TFLite and ONNX frontends and no optimized back
 ```
 $ ck install package --tags=lib,armnn,tflite,onnx,rel.21.11
 ```
+
+## Known issues
+
+### FlatBuffers
+
+[FlatBuffers](https://github.com/google/flatbuffers/) v1.12.x is required,
+which fails to build automatically with GCC 11. To build manually:
+
+```
+ck install package --tags=lib,flatbuffers \
+--env.EXTRA_FLAGS="-Wno-error=class-memaccess"
+```
