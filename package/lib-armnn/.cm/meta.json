@@ -319,19 +319,19 @@
       }
     },
     "rel.21.08": {
-       "extra_env": {
-          "PACKAGE_GIT_CHECKOUT": "v21.08",
-          "PACKAGE_VERSION": "21.08",
-          "ONNX_BRANCH": "--branch rel-1.6.0"
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v21.08",
+        "PACKAGE_VERSION": "21.08",
+        "ONNX_BRANCH": "--branch rel-1.6.0"
       }
     },
     "rel.21.11": {
-       "on_by_default": "yes",
-       "extra_env": {
-          "PACKAGE_GIT_CHECKOUT": "v21.11",
-          "PACKAGE_VERSION": "21.11",
-          "ONNX_BRANCH": "--branch rel-1.6.0"
-       }
+      "on_by_default": "yes",
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v21.11",
+        "PACKAGE_VERSION": "21.11",
+        "ONNX_BRANCH": "--branch rel-1.6.0"
+      }
     },
     "dev": {
       "extra_env": {
