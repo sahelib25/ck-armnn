@@ -201,6 +201,7 @@
                       { "PACKAGE_VERSION": "21.05" },
                       { "PACKAGE_VERSION": "21.08" },
                       { "PACKAGE_VERSION": "21.11" },
+                      { "PACKAGE_VERSION": "22.05" },
                       { "PACKAGE_VERSION": "dev"   },
                       { "PACKAGE_VERSION": "release" } ]
       }
