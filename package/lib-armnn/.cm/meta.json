@@ -362,6 +362,11 @@
         "USE_OPENCL": "YES"
       }
     },
+    "no-opencl": {
+      "extra_env": {
+        "USE_OPENCL": "NO"
+      }
+    },
     "tf": {
       "extra_env": {
         "USE_TF": "YES"
