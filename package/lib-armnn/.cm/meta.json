@@ -146,7 +146,8 @@
                           { "PACKAGE_VERSION": "21.02" },
                           { "PACKAGE_VERSION": "21.05" },
                           { "PACKAGE_VERSION": "21.08" } ],
-        "rel.2.5":      [ { "PACKAGE_VERSION": "22.05" },
+        "rel.2.5":      [ { "PACKAGE_VERSION": "22.08" },
+                          { "PACKAGE_VERSION": "22.05" },
                           { "PACKAGE_VERSION": "21.11" },
                           { "PACKAGE_VERSION": "dev"   } ]
       }
@@ -174,6 +175,7 @@
         "rel.21.08":    [ { "PACKAGE_VERSION": "21.08" } ],
         "rel.21.11":    [ { "PACKAGE_VERSION": "21.11" } ],
         "rel.22.05":    [ { "PACKAGE_VERSION": "22.05" } ],
+        "rel.22.08":    [ { "PACKAGE_VERSION": "22.08" } ],
         "release":      [ { "PACKAGE_VERSION": "release" } ],
         "dev":          [ { "PACKAGE_VERSION": "dev" } ],
         "neon":         [ { "USE_NEON":   ["on", "ON", "yes", "YES", "true", "TRUE", "1"] } ],
@@ -338,10 +340,18 @@
       }
     },
     "rel.22.05": {
-      "on_by_default": "yes",
+      "on_by_default": "no",
       "extra_env": {
         "PACKAGE_GIT_CHECKOUT": "v22.05",
         "PACKAGE_VERSION": "22.05",
+        "ONNX_BRANCH": "--branch rel-1.6.0"
+      }
+    },
+    "rel.22.08": {
+      "on_by_default": "yes",
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v22.08",
+        "PACKAGE_VERSION": "22.08",
         "ONNX_BRANCH": "--branch rel-1.6.0"
       }
     },

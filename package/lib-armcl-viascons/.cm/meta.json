@@ -139,10 +139,17 @@
       }
     },
     "rel.22.05": {
-      "on_by_default": "yes",
+      "on_by_default": "no",
       "extra_env": {
         "PACKAGE_GIT_CHECKOUT": "v22.05",
         "PACKAGE_VERSION": "22.05"
+      }
+    },
+    "rel.22.08": {
+      "on_by_default": "yes",
+      "extra_env": {
+        "PACKAGE_GIT_CHECKOUT": "v22.08",
+        "PACKAGE_VERSION": "22.08"
       }
     },
     "dev": {
