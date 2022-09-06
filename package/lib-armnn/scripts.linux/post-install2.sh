@@ -12,7 +12,7 @@ if [ -d "$INSTALL_DIR/install/lib64" ]; then
 fi
 
 # From rel.22.05, copy "src/profiling/{common,client}" to "install/include".
-if [[ "${PACKAGE_VERSION}" == "22.05" ]]; then
+if [[ "${PACKAGE_VERSION}" == "22.05" || "${PACKAGE_VERSION}" == "22.08" ]]; then
     cp -rf ${INSTALL_DIR}/src/profiling/common ${INSTALL_DIR}/install/include
     cp -rf ${INSTALL_DIR}/src/profiling/client ${INSTALL_DIR}/install/include
 fi
